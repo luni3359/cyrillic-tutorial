@@ -1,1 +1,1 @@
-This web app attempts to make learning cyrillc a quick and easy task.
+This web app attempts to make learning cyrillic a quick and easy task. It also applies to other languages.
