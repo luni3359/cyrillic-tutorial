@@ -17,21 +17,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.title {
-    // visibility: hidden;
-    font-variant: small-caps;
-    text-align: center;
-}
+// .title {
+//     font-variant: small-caps;
+//     text-align: center;
+// }
 
 .column {
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     height: 100%;
     width: var(--main-column-width);
-    box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.5) inset;
+    // box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.5) inset;
 }
 
 .wrap {
@@ -40,20 +40,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
+    flex: 0 1 auto;
     margin: 0 auto;
     height: var(--card-height);
     width: var(--card-width);
     background-color: greenyellow;
-}
-
-.response {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 0 0 0;
-    height: 80px;
-    width: 100%;
-    background-color: tomato;
 }
 
 .button {
@@ -65,9 +56,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 8px;
+    margin: 0 16px;
     height: 80%;
-    width: 25%;
+    width: 75px;
     background-color: teal;
 
     &:hover {
@@ -75,11 +66,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-// 80px + 325px + 15px
-@media only screen and (max-width: 420px) {
+.header {
 
-    .column {
-        filter: blur(100%);
-    }
+    background-color: cyan;
+}
+
+.response {
+
+    background-color: tomato;
+}
+
+@media only screen and (max-height: 500px) {
 
 }
